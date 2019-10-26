@@ -58,9 +58,8 @@ class Particle
 	}
 }
 
-class OddballParticle //inherits from Particle
+class OddballParticle extends Particle//inherits from Particle
 {
-	//your code here
 }
 
 
