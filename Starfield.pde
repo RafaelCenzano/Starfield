@@ -79,12 +79,15 @@ class OddballParticle extends Particle//inherits from Particle
 		myY += (Math.random() * 9) - 4;
 	}
 	void show(){
-		fill(119, 131, 150);
 		noStroke();
+		fill(75, 83, 94);
+		rect((float)myX - 10, (float)myY + 25, 20, 30);
+		arc((float)myX, (float)myY + (float)60, (float)30, (float)30, (float)Math.PI, (float)(2 * Math.PI));
+		fill(119, 131, 150);
 		ellipse((float)myX, (float)myY, 120, 75);
 		rect((float)myX - 40, (float)myY + 43, 17, 85);
 		rect((float)myX + 25, (float)myY + 43, 17, 85);
+		fill(143, 158, 181);
+		ellipse((float)myX, (float)myY, 35, 20);
 	}
 }
-
-
