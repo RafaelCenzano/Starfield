@@ -7,12 +7,13 @@ void setup()
 	for(int i = 0; i < warpLines.length; i++){
 		warpLines[i] = new Particle();
 	}
+	warpLines[0] = new OddballParticle();
 	strokeWeight(4);
 }
 void draw()
 {
 	background(0);
-	for(int i = 0; i < warpLines.length; i++){
+	for(int i = 800 - 1; i >= 0; i--){
 		warpLines[i].move();
 		warpLines[i].show();
 	}
@@ -41,9 +42,11 @@ class Particle
 			myX = myY = 300;
 			angle = (double)((int)(Math.random() * 360) + 1) * (Math.PI/180);
 			weightOfLine = 5;
-		}else if(myY > 500 || myX > 500 || myY < 200 || myX < 200){
-			weightOfLine = 8;
-		}else if(myY > 450 || myX > 450 || myY < 150 || myX < 150){
+		}
+		if(myY > 350 || myX > 350 || myY < 250 || myX < 250){
+			weightOfLine = 7;
+		}
+		if(myY > 450 || myX > 450 || myY < 150 || myX < 150){
 			weightOfLine = 10;
 		}
 		startY = myY;
@@ -60,6 +63,28 @@ class Particle
 
 class OddballParticle extends Particle//inherits from Particle
 {
+	int check;
+	OddballParticle(){
+		myX = 300;
+		myY = 450;
+		check = 0;
+	}
+	void move(){
+		check++;
+		if(check > 4){
+			myX = 300;
+		    myY = 450;
+		}
+		myX += (Math.random() * 9) - 4;
+		myY += (Math.random() * 9) - 4;
+	}
+	void show(){
+		fill(119, 131, 150);
+		noStroke();
+		ellipse((float)myX, (float)myY, 120, 75);
+		rect((float)myX - 40, (float)myY + 43, 17, 85);
+		rect((float)myX + 25, (float)myY + 43, 17, 85);
+	}
 }
 
 
