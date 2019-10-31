@@ -12,11 +12,16 @@ void setup()
 }
 void draw()
 {
-  background(0, 0, 0);
+  opacity();
   for (int i = 0; i < star.length; i++) {
     star[i].show();
     star[i].move();
   }
+}
+void opacity(){
+  fill(0, 0, 0, 40);
+  rect(0, 0, 900, 900);
+  loop();
 }
 
 class Particle
