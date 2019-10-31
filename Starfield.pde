@@ -7,8 +7,8 @@ void setup()
   background(0, 0, 0);
   for (int i = 0; i < star.length; i++) {
     star[i] = new Particle();
-    star[0] = new OddballParticle();
   }
+  star[0] = new OddballParticle();
 }
 void draw()
 {
@@ -41,6 +41,13 @@ class Particle
     ellipse((float)miX, (float)miY, 10, 10);
   }
   void move() {
+  if(miY > 900 || miY < 0 || miX > 900 || miX < 0){
+    miX = 400;
+    miY = 400;
+    angulo = (double)(Math.random() * 360) + 1 * (Math.PI/180);
+    velocidad = (double)(Math.random() * 15) + 2;
+    miColor = color((int)(Math.random() * 250) + 90, (int)(Math.random() * 255) + 90, (int)(Math.random() * 255) + 90);
+  }
     miX += velocidad * Math.cos(angulo);
     miY += velocidad * Math.sin(angulo);
   }
