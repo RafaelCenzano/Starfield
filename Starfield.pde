@@ -19,7 +19,7 @@ void draw()
   }
 }
 void opacity(){
-  fill(0, 0, 0, 40);
+  fill(20, 24, 82, 40);
   rect(0, 0, 900, 900);
   loop();
 }
@@ -33,7 +33,7 @@ class Particle
     velocidad = (double)(Math.random() * 25) + 2;
     miX = 400;
     miY = 400;
-    miColor = color((int)(Math.random() * 255) + 90, (int)(Math.random() * 255) + 90, (int)(Math.random() * 255) + 90);
+    miColor = color((int)(Math.random() * 250) + 90, (int)(Math.random() * 255) + 90, (int)(Math.random() * 255) + 90);
   }
 
   void show() {
@@ -59,8 +59,8 @@ class OddballParticle extends Particle//inherits from Particle
     fill(miColor);
     ellipse((float)miX, (float)miY, 100, 100);
     fill(255, 255, 255);
-    ellipse((float)miX + 20, (float)miY - 20, 20, 20); 
-    ellipse((float)miX - 20, (float)miY - 10, 10, 10);
+    ellipse((float)miX + 20, (float)miY - 20, 30, 30); 
+    ellipse((float)miX - 30, (float)miY - 10, 10, 10);
     ellipse((float)miX + 10, (float)miY + 20, 50, 10);
   }
 }
