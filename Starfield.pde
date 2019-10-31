@@ -19,7 +19,7 @@ void draw()
   }
 }
 void opacity(){
-  fill(20, 24, 82, 40);
+  fill(0, 0, 0, 40);
   rect(0, 0, 900, 900);
   loop();
 }
@@ -30,7 +30,7 @@ class Particle
   int miColor;
   Particle() {
     angulo = (double)(Math.random() * 360) + 1 * (Math.PI/180);
-    velocidad = (double)(Math.random() * 25) + 2;
+    velocidad = (double)(Math.random() * 15) + 2;
     miX = 400;
     miY = 400;
     miColor = color((int)(Math.random() * 250) + 90, (int)(Math.random() * 255) + 90, (int)(Math.random() * 255) + 90);
