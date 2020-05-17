@@ -1,4 +1,3 @@
-//your code here
 Particle[] warpLines = new Particle[800];
 void setup()
 {
