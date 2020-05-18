@@ -1,10 +1,11 @@
 Starfield (with an Oddball)
 =========================
-For this assignment you will make a animation of fireworks. This common animation is called a "starfield" since it can also be used to simulate movement through a field of stars. You may find slides 1 - 131 on <a href="https://docs.google.com/presentation/d/1Eldw10Y6tP7Ru6pjaCcZPhm5vxjnKjVrWLB8qT5IiF0/edit?usp=sharing">OOP--Inheritance & Encapsulation</a> presentation helpful.
+For this assignment you will make a animation of fireworks. This common animation is called a "starfield" since it can also be used to simulate movement through a field of stars. You may find slides 35 - 52 on <a href="https://docs.google.com/presentation/d/1Eldw10Y6tP7Ru6pjaCcZPhm5vxjnKjVrWLB8qT5IiF0/edit?usp=sharing">OOP--Inheritance & Encapsulation</a> presentation helpful.
  
 Program requirements:
 ---------------------
-Your program must use at least two classes to model the particles. A `Particle` super class and an `Oddball` sub class. All the particles must be stored in a single array of the super class type.
+Your program must use at least two classes to model the particles. A `Particle` super class and an `Oddball` sub class. All the particles must be stored in a single array of the super class type. Make sure you do not unnunnecessarily duplicate inherited variables and functions in the `Oddball` sub class. Your `Oddball` sub class need only contain a constructor and `void move()` and/or `void show()` so that the `Oddball` moves and/or looks different.
+
 
 Suggested steps to completing this assignment
 -----------------------------------
@@ -16,15 +17,73 @@ Suggested steps to completing this assignment
   * `void show()`, draws the particle in the correct color
 3. Now finish the program's `setup()` and `draw()`
 4. Add one `Particle` variable, and make sure you can see it move
+5. Add an array of type `Particle` and loop through it to move and show all the Particles.
 9. Create an OddballParticle class that `extends` the Particle class.
 12. Change the first element in the array to a `OddballParticle` instead of a `Particle`
 13. Run your program. Make sure you can see the Oddball.
-15. Submit the url of your GitHub webpage via the school loop drop box for the assignment   
-
+15. Submit the url of your working GitHub webpage to google classroom
 Extensions: Have a fun and be creative. If you have extra time you may want to modify your program and add extra features and other types and arrangements of particles. Look at student work from the links below for other variations.
 
 Samples of Student Work
 -----------------------
+[Justine](https://justineorgel.github.io/Starfield/)   
+[Dylan](https://sinfinite01.github.io/Starfield/)   
+[Rameses](https://notcompetent.github.io/Starfield/)   
+[Eddie](https://edd1153.github.io/Starfield/)   
+[Rodger](https://coder123456.github.io/Starfield/)   
+[Xinjian](https://xinjiannn.github.io/Starfield/)   
+[Madeline](https://mhl343.github.io/Starfield/)   
+[Jasmine](https://jasmine-c-16.github.io/Starfield/)   
+[Ling](https://ling1729.github.io/Starfield/)   
+[Jaqueline](https://jacqsmei.github.io/Starfield/)   
+[Marlon](https://marlonsm.github.io/Starfield/)   
+[Claire](https://clrafferty.github.io/Starfield/)   
+[Phuoc](https://megagotnothing.github.io/Starfield/)    
+[Sam](https://samxie23.github.io/Starfield/)   
+[Kimia](https://kimiasattary.github.io/Starfield/)   
+[Joaquin](https://jowarren137.github.io/Starfield/)   
+[Johnny](https://jowong30.github.io/Starfield/)   
+[Clarence](https://clarencechung.github.io/Starfield/)   
+[Claire](https://cmbeaudin.github.io/Starfield/)   
+[Rahul](https://rabulsara02.github.io/Starfield/)   
+[Edison](https://edchen5.github.io/Starfield/)   
+[Gabriel](https://gazhu1.github.io/Starfield/)   
+[Anna](https://annaorgel.github.io/Starfield/)   
+[Kang](https://kangryu.github.io/Starfield/)   
+[Cheryl](https://cherhchen.github.io/Starfield/)   
+[Chris](https://chlee40.github.io/Starfield/)   
+[Hazel](https://hadrake8.github.io/Starfield/)   
+[Max](https://maklivans.github.io/Starfield/)   
+[Fiona](https://fiyim.github.io/Starfield/)   
+[Noah](https://bizaark.github.io/Starfield/)   
+[Melanie](https://metam2.github.io/Starfield/)   
+[Qi](https://qiyang2.github.io/Starfield/)   
+[Tarsa](https://starfield.its-mustard.me/)   
+[Kai](https://kajjchang.github.io/Starfield/)   
+[Luna](https://lunaisabel.github.io/Starfield/)   
+[Tomas](https://todeluco.github.io/Starfield/)   
+[Reily](https://reilyfairchild.github.io/Starfield/)   
+[Marvin](https://malee31.github.io/StarfieldProcessing/)   
+[Kelly](https://kellyye22.github.io/Starfield/)   
+[Andy](https://andy-wen1.github.io/Starfield/)   
+[Matt](https://madyer1.github.io/Starfield/)   
+[Teresa](https://telee1.github.io/Starfield/)   
+[Andrew](https://a431.github.io/Starfield/)   
+[Kaitlyn](https://therealkaitlyn.github.io/Starfield/)   
+[Ayaka](https://aychou.github.io/Starfield/)   
+[Rafael](https://rafaelcenzano.github.io/Starfield/)   
+[Francesca](https://frprivalova.github.io/Starfield/)   
+[Theo](https://akir6939.github.io/Starfield/)   
+[Robert](https://frestho.github.io/Starfield/)   
+[Antonio](https://anpacheco2.github.io/Starfield/)   
+[Cara](https://cakuk.github.io/Starfield/)   
+[Ashley](https://ashleylai1.github.io/Starfield/)    
+[Maanav](https://gandhigang.github.io/Starfield/)   
+[Antonio](https://andzibmis.github.io/Starfield/)   
+[Jonathan](https://jonrfu.github.io/Starfield/)   
+[Maanav](https://gandhigang.github.io/Starfield/)   
+[Michael](https://wasabi-jpg.github.io/Starfield/)   
+[Anthony](https://anwen2.github.io/Starfield/)   
 [Vicky](https://vickyguan3.github.io/Starfield/)   
 [Marisa](https://saeriam.github.io/Starfield/)   
 [Fred](https://fredxhua.github.io/Starfield/)   
